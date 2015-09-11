@@ -1,4 +1,8 @@
 {
+    "name": "GoatCodeNL",
+    "description": "Quick project setup for a silex REST application. Ready to run.",
+    "version": "0.0.1",
+    "license": "MIT",
     "require": {
         "silex/silex": "v1.3.3"
     }
