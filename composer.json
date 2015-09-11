@@ -1,5 +1,5 @@
 {
-    "name": "GoatCodeNL/silex-bootstrap",
+    "name": "goatcodenl/silex-bootstrap",
     "description": "Quick project setup for a silex REST application. Ready to run.",
     "license": "MIT",
     "require": {
