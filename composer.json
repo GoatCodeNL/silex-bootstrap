@@ -1,0 +1,5 @@
+{
+    "require": {
+        "silex/silex": "v1.3.3"
+    }
+}
