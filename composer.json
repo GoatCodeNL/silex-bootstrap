@@ -5,5 +5,6 @@
     "license": "MIT",
     "require": {
         "silex/silex": "v1.3.3"
-    }
+    },
+    "bin": ["./bin/silex-bootstrap"]
 }
