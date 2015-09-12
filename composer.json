@@ -3,7 +3,13 @@
     "description": "Quick project setup for a silex REST application. Ready to run.",
     "license": "MIT",
     "require": {
-        "silex/silex": "v1.3.3"
+        "silex/silex": "v1.3.3",
+	"symfony/console": "2.7.*"
     },
-    "bin": ["./bin/silex-bootstrap"]
+    "bin": ["./bin/silex-bootstrap"],
+    "autoload": {
+        "psr-4": {
+            "SilexBootstrap\\": "src/"
+        }
+    }
 }

@@ -1,41 +1,9 @@
 #!/usr/bin/php
 <?php
 
-// just for composer setup and testing
 
-$directories = [
-	'public',
-	'src',
-	'app',
-	'config'
-];
+require __DIR__.'/../vendor/autoload.php';
 
-$filesToCopy = [
-    'app/bootstrap.php',
-    'app/app.php',
-    'config/application.php',
-    'public/.htaccess',
-    'public/index.php',
-];
-
-$filesToGenerate = [
-
-];
-
-$commandsToExecute = [
-
-];
-
-foreach($directories as $directory) {
-    if(file_exists($directory) === false) {
-        mkdir($directory, 0775);
-    }
-}
-
-foreach($filesToCopy as $file) {
-    if(file_exists(dirname($file)) === false) {
-        mkdir(dirname($file), 0755, true);
-    }
-
-    copy(__DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'files'.DIRECTORY_SEPARATOR.$file, $file);
-}
+$application = new Symfony\Component\Console\Application();
+$application->add(new \SilexBootstrap\InitCommand());
+$application->run();
