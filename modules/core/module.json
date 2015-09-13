@@ -1,0 +1,39 @@
+{
+    "name": "core",
+    "description": "Core files",
+    "directories": [
+        "app",
+        "config",
+        "public",
+        "src"
+    ],
+    "dependecies": [
+        
+    ],
+    "files": [
+        {
+            "target": "app/app.php",
+            "source": "core/files/app/app.php"
+        },
+        {
+            "target": "app/bootstrap.php",
+            "source": "core/files/app/app.php"
+        },
+        {
+            "target": "config/application.php",
+            "source": "core/files/config/application.php"
+        },
+        {
+            "target": "public/.htaccess",
+            "source": "core/files/public/.htaccess"
+        },
+        {
+            "target": "public/index.php",
+            "source": "core/files/public/index.php"
+        },
+        {
+            "target": "composer.json",
+            "source": "core/files/composer.json"
+        }
+    ]
+}
